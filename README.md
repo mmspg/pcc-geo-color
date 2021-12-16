@@ -4,7 +4,7 @@ This repository includes scripts for training and testing a neural network archi
 
 The architecture of the model is represented on the figure below. 
 
-![autoencoder_architecture](images/autoencoder_architecture.tiff)
+![autoencoder_architecture](images/autoencoder_architecture.png)
 
 This architecture correspond to the unified model's structure, where C is the number of output channels that can be set 1, 3 or 4. These values correspond to the cases where the compression model is used to encode geometry, color or geometry and color simultaneously. Adjusting this parameter allows for either the selection of an holistic representation of both dimensions, where both geometry and color are simultaneously fed to the network, or a sequential approach, where one model compresses the geometry and another encodes the color attributes.
 
@@ -87,11 +87,15 @@ python sample_dataset.py 'path/to/dataset/blocks' 'path/to/sampled/dataset/block
 
 ### Conditions of use
 
+A large portion of the provided scripts are composed of code adpated from https://github.com/mauriceqch/pcc_geo_cnn [2].
+
 If you wish to use any of the provided scripts in your research, we kindly ask you to cite [1].
 
 ### References
 
 [1] Evangelos Alexiou, Kuan Tung, and Touradj Ebrahimi. 2020. “Towards Neural Network Approaches for Point Cloud Compression.” In *Applications of Digital Image Processing XLIII*, 11510:1151008. International Society for Optics and Photonics. https://doi.org/10.1117/12.2569115.https://doi.org/10.1109/ICMEW46912.2020.9106005)
+
+[2] Maurice Quach, Giuseppe Valenzise, and Frederic Dufaux. 2019. “Learning Convolutional Transforms for Lossy Point Cloud Geometry Compression.” *2019 IEEE International Conference on Image Processing (ICIP)*, September, 4320–24. https://doi.org/10.1109/ICIP.2019.8803413.
 
 
 
